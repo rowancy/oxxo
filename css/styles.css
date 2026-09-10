@@ -1,0 +1,80 @@
+.logo{
+    width: 100%; /* Ocupa el 100% del ancho de su contenedor padre */
+    max-width: 150px; /* Limita el ancho máximo a 150 píxeles, aunque la pantalla sea más grande */
+    height: auto; /* Ajusta la altura automáticamente para no deformar la imagen */
+    margin-right: 20px; /* Aplica un margen exterior derecho de 20 píxeles */
+    position: absolute; /* Posiciona el elemento ignorando el flujo normal del documento */
+    top: 0; /* Lo pega exactamente en el borde superior de su contenedor posicionado más cercano */
+}
+
+.logo2{
+    width: 100%; /* Ocupa el 100% del ancho de su contenedor padre */
+    max-width: 100px; /* Limita el ancho máximo a 100 píxeles */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin-left: 1390px; /* Empuja el elemento 1390 píxeles hacia la derecha desde su izquierda */
+    position: absolute; /* Posiciona el elemento ignorando el flujo normal del documento */
+    top: 0; /* Lo posiciona en la parte más alta de su contenedor */
+}
+
+.contenido{
+    text-align: center; /* Centra el texto que esté dentro de este contenedor */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro (funciona junto con display: flex) */
+    display: flex; /* Activa el modelo de caja flexible (Flexbox) para organizar los elementos hijos */
+    justify-content: space-around; /* Distribuye los elementos hijos horizontalmente, dejando espacio igual alrededor de cada uno */
+}
+
+.titulo{
+    margin: 0; /* Elimina completamente los márgenes exteriores (arriba, abajo, izquierda, derecha) */
+}
+
+.subtitulo{
+    margin: 0; /* Elimina completamente los márgenes exteriores */
+}
+
+.contenedor{
+    font-size: x-large; /* Cambia el tamaño de la letra a un tamaño extra grande */
+    height: 60vh; /* La altura será el 60% del alto total de la pantalla (Viewport Height) */
+    max-height: 60vh; /* Limita la altura máxima para que no exceda el 60% del alto de la pantalla */
+    overflow-y: auto; /* Si el contenido supera la altura, crea una barra de desplazamiento vertical */
+    border: 1px solid #000000; /* Aplica un borde negro, sólido y de 1 píxel de grosor */
+    background-color: white; /* Pinta el fondo del contenedor de color blanco */
+    margin-top: 20px; /* Aplica un margen exterior superior de 20 píxeles */
+}
+
+#carrito{
+    max-height: 50%; /* Limita la altura al 50% de la altura de su contenedor padre */
+    width: 100%; /* Ocupa todo el ancho disponible del padre */
+    font-size: larger; /* Hace la letra más grande en relación con el tamaño de letra de su padre */
+}
+
+.titulocantidad{
+    width: 10%; /* El elemento solo ocupará el 10% del ancho disponible */
+}
+
+#cuerpo{
+    max-height: 10%; /* Limita la altura al 10% de la altura de su contenedor padre */
+    width: 100%; /* Ocupa todo el ancho de su contenedor */
+    font-size: larger; /* Incrementa el tamaño de la fuente respecto a su padre */
+}
+
+.claseinput{
+    font-size: x-large; /* Tamaño de fuente extra grande */
+    width: calc(100% - 8px); /* Calcula el ancho dinámicamente: el 100% menos 8 píxeles (ideal para descontar bordes) */
+}
+
+.contenedor2{
+    display: flex; /* Activa Flexbox para distribuir elementos hijos horizontalmente por defecto */
+    align-items: center; /* Centra verticalmente los elementos hijos dentro del contenedor */
+}
+
+.claseboton{
+    height: 15vh; /* Altura del 15% del total de la pantalla */
+    width: 28dvh; /* Ancho basado en unidades de altura dinámica de la pantalla (28% del dynamic viewport height) */
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el espacio sin deformarse (puede recortarse) */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita en mosaico */
+    background-position: center; /* Centra la imagen de fondo dentro del elemento */
+    cursor: pointer; /* Cambia el cursor a la forma de "mano" para indicar que es clickeable */
+    border: none; /* Le quita los bordes por defecto al botón */
+    background-color: #Ffff00; /* Pinta el fondo de color amarillo */
+    margin: 10px; /* Añade un espacio exterior de 10 píxeles por los 4 lados */
+}
